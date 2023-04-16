@@ -13,7 +13,7 @@ public class Carta {
     }
 
     public Carta generarCartaAleatoria() {
-       Random valorAleatorio
+      
 
         return Carta;
     }
