@@ -116,8 +116,7 @@ public class Carta {
       Carta cartaSeleccionada = null;
       int opcion;
 
-      // Mostrar cartas disponibles
-    
+
       int i = 1;
       for (Carta carta : baraja) {
          System.out.println("Carta " + i + ": " + cartasGeneradaslegible(carta));
