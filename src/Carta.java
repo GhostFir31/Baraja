@@ -1,5 +1,4 @@
 
-
 public class Carta {
 
     private String figura;
