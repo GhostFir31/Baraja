@@ -112,9 +112,9 @@ public class Carta {
      
     public void conseguirCarta(HashSet<Carta> baraja){
 
-      Scanner leer = new Scanner(System.in);
+      Random cartaEliminada = new Random();
       Carta cartaSeleccionada = null;
-      int opcion;
+      int cartaPosicion;
 
 
       int i = 1;
@@ -123,15 +123,12 @@ public class Carta {
           i++;
       }
   
-
-      System.out.println("Cual carta deseas eliminar:");
-      
-      opcion = leer.nextInt();
+      cartaPosicion = cartaEliminada.nextInt(5)+1;
   
       i = 1;
     
       for (Carta carta : baraja) {
-          if (i == opcion) {
+          if (i == cartaPosicion) {
               cartaSeleccionada = carta;
               break;
           }
@@ -141,7 +138,7 @@ public class Carta {
       baraja.remove(cartaSeleccionada);
 
       System.out.println("se ha eliminado esta carta: " + cartasGeneradaslegible(cartaSeleccionada));
-        
+        i=1;
       for (Carta carta : baraja) {
         System.out.println("Carta " + i + ": " + cartasGeneradaslegible(carta));
          i++;
