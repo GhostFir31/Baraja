@@ -7,7 +7,7 @@ public class Carta {
 
     private String figura;
     private String color;
-    private String numero;
+    //private String numero;
 
     public Carta(String figura, String color, String numero) {
         this.figura = figura;
